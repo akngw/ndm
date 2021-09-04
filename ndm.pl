@@ -87,8 +87,8 @@ sub infer_repetition_with_number {
 }
 
 sub replace_numbers {
-    my ( $str, @numbers ) = @_;
-    $str =~ s/\d+/shift @numbers/eg;
+    my ( $str, @nums ) = @_;
+    $str =~ s/\d+/shift @nums/eg;
     $str;
 }
 
